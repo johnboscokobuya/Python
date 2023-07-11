@@ -8,11 +8,7 @@ Assigned into the account and reserved sandbox
 Used Cisco Anyconnect for VPN
 Used Netmiko COnnectHandler to remotely connect Cisco CSR IOS XE 8000 and display ip status interface 
 
-##Output of show ip int brief using netmiko
-john@JohnBosco:~/netmiko_Python3$ python3 main.py 
-p int brief
-Interface              IP-Address      OK? Method Status                Protocol
-GigabitEthernet1       10.10.20.48     YES NVRAM  up                    up      
-GigabitEthernet2       unassigned      YES NVRAM  administratively down down    
-GigabitEthernet3       unassigned      YES NVRAM  administratively down down    
-john@JohnBosco:~/netmiko_Python3$ python3 main.py 
+##Prompt user to enter username and password of remote without exposing SSH details
+ -Import getpass from netmiko, ConnectHandler
+ -Define username using python input, password and username under device paramaters
+ -Use try and exception to capture error
